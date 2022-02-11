@@ -12,10 +12,29 @@
 
 html {
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  // line-height: 1;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.siteheader {
+  margin: 0;
+  padding: 0.5em;
+  &__logo {
+    margin: 0;
+    text-align: center;
+    color: var(--black);
+    font-size: 1.875em;
+    font-family: var(--shrikhand);
+  }
 }
