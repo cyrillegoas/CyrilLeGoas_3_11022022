@@ -1,15 +1,4 @@
-:root {
-  --primary: #9356dc;
-  --secondary: #ff79da;
-  --terciary: #99e2d0;
-  --footer-bg: rgb(53, 53, 53);
-  --black: rgb(16, 16, 16);
-  --grey: rgb(234, 234, 234);
-  --grey-lighter: hsl(0, 0%, 96%);
-  --white: #ffffff;
-  --shrikhand: Shrikhand, Arial, Helvetica, sans-serif;
-  --roboto: Roboto, Arial, Helvetica, sans-serif;
-}
+@import "_variables.scss";
 
 html {
   box-sizing: border-box;
@@ -24,8 +13,8 @@ html {
 body {
   margin: 0 auto;
   max-width: 1200px;
-  color: var(--black);
-  font-family: var(--roboto);
+  color: $black;
+  font-family: $roboto;
 }
 
 .siteheader {
@@ -35,13 +24,13 @@ body {
     margin: 0;
     text-align: center;
     font-size: 1.875em;
-    font-family: var(--shrikhand);
+    font-family: $shrikhand;
   }
 }
 
 .location {
   padding: 1em;
-  background-color: var(--grey);
+  background-color: $grey;
   box-shadow: inset 0 5px 8px -5px rgba(0, 0, 0, 0.4);
   text-align: center;
 
@@ -58,7 +47,7 @@ body {
 }
 
 .hero {
-  background-color: var(--grey-lighter);
+  background-color: $grey-lighter;
   text-align: center;
   padding: 2.5em 2.5em 3.5em;
 
@@ -75,8 +64,8 @@ body {
   padding: 1em 1.5em;
   border-radius: 500px;
   border: none;
-  background-color: var(--primary);
-  background-image: linear-gradient(-5deg, var(--primary), var(--secondary));
+  background-color: $primary;
+  background-image: linear-gradient(-5deg, $primary, $secondary);
   box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
-  color: var(--white);
+  color: $white;
 }
