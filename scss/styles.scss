@@ -1,5 +1,21 @@
-body {
-  h1 {
-    color: red;
-  }
+:root {
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --terciary: #99e2d0;
+  --footer-bg: rgb(53, 53, 53);
+  --black: rgb(16, 16, 16);
+  --grey: rgb(234, 234, 234);
+  --white: #ffffff;
+  --shrikhand: Shrikhand, Arial, Helvetica, sans-serif;
+  --roboto: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
