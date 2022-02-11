@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 html {
   box-sizing: border-box;
@@ -20,6 +21,7 @@ body {
 .siteheader {
   margin: 0;
   padding: 0.5em;
+
   &__logo {
     margin: 0;
     text-align: center;
@@ -31,7 +33,7 @@ body {
 .location {
   padding: 1em;
   background-color: $grey;
-  box-shadow: inset 0 5px 8px -5px rgba(0, 0, 0, 0.4);
+  @include box-shadow($inset: true, $x: 0, $spread: -5px, $color: $shadow-dark);
   text-align: center;
 
   &__value {
@@ -66,6 +68,24 @@ body {
   border: none;
   background-color: $primary;
   background-image: linear-gradient(-5deg, $primary, $secondary);
-  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
+  @include box-shadow();
   color: $white;
+
+  &:hover {
+    background-image: linear-gradient(
+      -5deg,
+      lighten($primary, 8%),
+      lighten($secondary, 8%)
+    );
+    @include box-shadow($color: $shadow-dark);
+  }
+
+  &:active {
+    background-image: linear-gradient(
+      -5deg,
+      lighten($primary, 16%),
+      lighten($secondary, 16%)
+    );
+    @include box-shadow($inset: true);
+  }
 }

@@ -1,3 +1,4 @@
+// Colors
 $primary: #9356dc;
 $secondary: #ff79da;
 $terciary: #99e2d0;
@@ -6,5 +7,16 @@ $black: rgb(16, 16, 16);
 $grey: rgb(234, 234, 234);
 $grey-lighter: hsl(0, 0%, 96%);
 $white: #ffffff;
+$shadow-light: rgba(0, 0, 0, 0.2);
+$shadow-dark: rgba(0, 0, 0, 0.4);
+
+// Fonts
 $shrikhand: Shrikhand, Arial, Helvetica, sans-serif;
 $roboto: Roboto, Arial, Helvetica, sans-serif;
+
+// Default value for box-shadow mixin
+$shadow-x: 2px;
+$shadow-y: 5px;
+$shadow-blur: 8px;
+$shadow-spread: 0;
+$shadow-color: $shadow-light;
