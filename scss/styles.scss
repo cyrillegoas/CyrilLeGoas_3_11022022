@@ -20,18 +20,18 @@ body {
 
 .siteheader {
   margin: 0;
-  padding: 0.5em;
+  padding: 0.5rem;
 
   &__logo {
     margin: 0;
     text-align: center;
-    font-size: 1.875em;
+    font-size: 1.875rem;
     font-family: $shrikhand;
   }
 }
 
 .location {
-  padding: 1em;
+  padding: 1rem;
   background-color: $grey;
   @include box-shadow($inset: true, $x: 0, $spread: -5px, $color: $shadow-dark);
   text-align: center;
@@ -44,26 +44,26 @@ body {
     content: "\f3c5";
     font: var(--fa-font-solid);
     position: absolute;
-    left: -1.5em;
+    left: -1.5rem;
   }
 }
 
 .hero {
   background-color: $grey-lighter;
   text-align: center;
-  padding: 2.5em 2.5em 3.5em;
+  padding: 2.5rem 2.5rem 3.5rem;
 
   &__title {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   &__content {
-    margin-bottom: 1.875em;
+    margin-bottom: 1.875rem;
   }
 }
 
 .btn {
-  padding: 1em 1.5em;
+  padding: 1rem 1.5rem;
   border-radius: 500px;
   border: none;
   background-color: $primary;
