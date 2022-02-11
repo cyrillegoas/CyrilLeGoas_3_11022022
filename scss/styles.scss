@@ -5,6 +5,7 @@
   --footer-bg: rgb(53, 53, 53);
   --black: rgb(16, 16, 16);
   --grey: rgb(234, 234, 234);
+  --grey-lighter: hsl(0, 0%, 96%);
   --white: #ffffff;
   --shrikhand: Shrikhand, Arial, Helvetica, sans-serif;
   --roboto: Roboto, Arial, Helvetica, sans-serif;
@@ -21,9 +22,10 @@ html {
 }
 
 body {
-  margin: 0;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
+  color: var(--black);
+  font-family: var(--roboto);
 }
 
 .siteheader {
@@ -32,7 +34,6 @@ body {
   &__logo {
     margin: 0;
     text-align: center;
-    color: var(--black);
     font-size: 1.875em;
     font-family: var(--shrikhand);
   }
@@ -43,9 +44,6 @@ body {
   background-color: var(--grey);
   box-shadow: inset 0 5px 8px -5px rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: var(--black);
-  font-size: 1em;
-  font-family: var(--roboto);
 
   &__value {
     position: relative;
@@ -57,4 +55,28 @@ body {
     position: absolute;
     left: -1.5em;
   }
+}
+
+.hero {
+  background-color: var(--grey-lighter);
+  text-align: center;
+  padding: 2.5em 2.5em 3.5em;
+
+  &__title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  &__content {
+    margin-bottom: 1.875em;
+  }
+}
+
+.btn {
+  padding: 1em 1.5em;
+  border-radius: 500px;
+  border: none;
+  background-color: var(--primary);
+  background-image: linear-gradient(-5deg, var(--primary), var(--secondary));
+  box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
+  color: var(--white);
 }
