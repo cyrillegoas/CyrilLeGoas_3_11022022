@@ -216,3 +216,40 @@ body {
     font-size: 1.125rem;
   }
 }
+
+.footer {
+  padding: 1.5rem 1rem 2.125rem;
+  background-color: $grey-darker;
+
+  &__title {
+    color: $white;
+    font-size: 1.25rem;
+    font-family: $shrikhand;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__link {
+    line-height: 1.8;
+    &:link,
+    &:visited,
+    &:active {
+      color: $white;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  &__icon {
+    margin-right: 0.75rem;
+    width: 1rem;
+  }
+}
