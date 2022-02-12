@@ -16,11 +16,15 @@ body {
   max-width: 1200px;
   color: $black;
   font-family: $roboto;
+  background-image: url(/assets/bg-pattern.svg);
+  background-attachment: fixed;
+  background-size: 500px;
 }
 
 .siteheader {
   margin: 0;
   padding: 0.5rem;
+  background-color: $white;
 
   &__logo {
     margin: 0;
@@ -95,6 +99,7 @@ body {
 
 .steps {
   padding: 3rem 1rem 4.25rem;
+  background-color: $white;
 
   &__title {
     font-size: 1.5rem;
