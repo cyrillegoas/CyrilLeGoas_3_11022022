@@ -32,7 +32,7 @@ body {
 
 .location {
   padding: 1rem;
-  background-color: $grey;
+  background-color: $grey-light;
   @include box-shadow($inset: true, $x: 0, $spread: -5px, $color: $shadow-dark);
   text-align: center;
 
@@ -57,6 +57,7 @@ body {
     margin: 0;
     font-size: 1.5rem;
   }
+
   &__content {
     margin-bottom: 1.875rem;
   }
@@ -89,5 +90,59 @@ body {
       lighten($secondary, 16%)
     );
     @include box-shadow($inset: true);
+  }
+}
+
+.steps {
+  padding: 3rem 1rem 4.25rem;
+
+  &__title {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1.75rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 0.75rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5rem;
+    list-style: none;
+    counter-reset: item_count;
+  }
+
+  &__item {
+    min-height: 4.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1.5625rem;
+    flex-basis: 100%;
+    background-color: $grey-lighter;
+    counter-increment: item_count;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:before {
+      content: counter(item_count);
+      position: absolute;
+      left: -0.75rem;
+      background-color: $primary;
+      color: $white;
+      border-radius: 50%;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    margin-right: 1.75rem;
+    color: $grey-dark;
+  }
+
+  &__instruction {
+    font-weight: bold;
   }
 }

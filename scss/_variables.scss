@@ -1,20 +1,21 @@
 // Colors
-$primary: #9356dc;
-$secondary: #ff79da;
-$terciary: #99e2d0;
-$footer-bg: rgb(53, 53, 53);
-$black: rgb(16, 16, 16);
-$grey: rgb(234, 234, 234);
+$primary: hsl(267, 66%, 60%);
+$secondary: hsl(317, 100%, 74%);
+$terciary: hsl(165, 56%, 74%);
+$black: hsl(0, 0%, 6%);
+$grey-darker: hsl(0, 0%, 21%);
+$grey-dark: hsl(0, 0%, 49%);
+$grey-light: hsl(0, 0%, 92%);
 $grey-lighter: hsl(0, 0%, 96%);
-$white: #ffffff;
-$shadow-light: rgba(0, 0, 0, 0.2);
-$shadow-dark: rgba(0, 0, 0, 0.4);
+$white: hsl(0, 0%, 100%);
+$shadow-light: hsla(0, 0%, 0%, 0.2);
+$shadow-dark: hsla(0, 0%, 0%, 0.4);
 
 // Fonts
 $shrikhand: Shrikhand, Arial, Helvetica, sans-serif;
 $roboto: Roboto, Arial, Helvetica, sans-serif;
 
-// Default value for box-shadow mixin
+// Default values for box-shadow mixin
 $shadow-x: 2px;
 $shadow-y: 5px;
 $shadow-blur: 8px;
