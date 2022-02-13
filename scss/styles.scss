@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0.5rem;
   background-color: $white;
+  position: relative;
 
   @include respond-to("medium") {
     padding: 0.5rem 2rem;
@@ -35,6 +36,23 @@ body {
     text-align: center;
     font-size: 1.875rem;
     font-family: $shrikhand;
+  }
+}
+
+.back-arrow {
+  position: absolute;
+  top: 0.95rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
