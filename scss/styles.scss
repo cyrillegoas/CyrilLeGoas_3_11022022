@@ -351,6 +351,8 @@ body {
   background-color: $grey-lighter;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  position: relative;
+  margin-top: -3.3rem;
 
   &__title {
     margin: 0;
