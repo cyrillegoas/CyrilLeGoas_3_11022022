@@ -218,6 +218,7 @@ body {
 .card {
   flex-basis: 100%;
   border-radius: 20px;
+  position: relative;
   @include box-shadow();
 
   &:hover {
@@ -264,6 +265,18 @@ body {
     margin: 0;
     margin-bottom: 0.3125rem;
     font-size: 1.125rem;
+  }
+
+  &--new::before {
+    content: "Nouveau";
+    padding: 0.5rem 0.75rem;
+    background-color: $terciary;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    position: absolute;
+    top: 12px;
+    right: 12px;
   }
 }
 
