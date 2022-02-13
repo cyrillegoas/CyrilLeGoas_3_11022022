@@ -349,6 +349,8 @@ body {
 .menu {
   padding: 2rem 1rem 3.5rem;
   background-color: $grey-lighter;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 
   &__title {
     margin: 0;
