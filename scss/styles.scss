@@ -141,11 +141,19 @@ body {
       line-height: 1.5rem;
       text-align: center;
     }
+
+    &--color-purple {
+      background-color: $primary-faded;
+    }
   }
 
   &__icon {
     margin-right: 1.75rem;
     color: $grey-dark;
+
+    &--color-purple {
+      color: $primary;
+    }
   }
 
   &__instruction {
