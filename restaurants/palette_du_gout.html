@@ -38,6 +38,60 @@
       src="../assets/palette_du_gout/palette_du_gout,w_1200.jpg"
       alt="assiette saumon fumé et saint-jacques"
     />
-    <main class="menu"></main>
+    <main class="menu">
+      <h2 class="menu__title">La palette du gout</h2>
+      <form class="menu__form" name="menu-selection" action="#">
+        <section class="menu__section">
+          <h3 class="menu__section-title">Entrées</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <label class="icon-container">
+                <span class="menu__item-name">Fricassée d'escargot</span>
+                <span class="menu__item-description"
+                  >Au piment d'Espelette</span
+                >
+                <span class="menu__item-price">25€</span>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="apetizer"
+                  value="1"
+                />
+              </label>
+            </li>
+            <li>
+              <label class="icon-container">
+                <span class="menu__item-name">Foie gras de canard mi-cuit</span>
+                <span class="menu__item-description"
+                  >Et ses copeaux de truffe noire</span
+                >
+                <span class="menu__item-price">35€</span>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="apetizer"
+                  value="2"
+                />
+              </label>
+            </li>
+            <li>
+              <label class="icon-container">
+                <span class="menu__item-name">Oeuf au plat</span>
+                <span class="menu__item-description"
+                  >Assaisonné à la truffe sur lit de caviar</span
+                >
+                <span class="menu__item-price">20€</span>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="apetizer"
+                  value="3"
+                />
+              </label>
+            </li>
+          </ul>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
