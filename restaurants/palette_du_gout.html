@@ -42,15 +42,18 @@
       <h2 class="menu__title">La palette du gout</h2>
       <form class="menu__form" name="menu-selection" action="#">
         <section class="menu__section">
-          <h3 class="menu__section-title">Entrées</h3>
+          <h3 class="menu__section-title">ENTRÉES</h3>
+          <div class="menu__underline"></div>
           <ul class="menu__list">
             <li class="menu__item">
-              <label class="icon-container">
+              <label class="menu__item-label">
                 <span class="menu__item-name">Fricassée d'escargot</span>
-                <span class="menu__item-description"
-                  >Au piment d'Espelette</span
-                >
-                <span class="menu__item-price">25€</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Au piment d'Espelette</span
+                  >
+                  <span class="menu__item-price">25€</span>
+                </div>
                 <input
                   class="menu__checkbox"
                   type="checkbox"
@@ -59,13 +62,15 @@
                 />
               </label>
             </li>
-            <li>
-              <label class="icon-container">
+            <li class="menu__item">
+              <label class="menu__item-label">
                 <span class="menu__item-name">Foie gras de canard mi-cuit</span>
-                <span class="menu__item-description"
-                  >Et ses copeaux de truffe noire</span
-                >
-                <span class="menu__item-price">35€</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Et ses copeaux de truffe noire</span
+                  >
+                  <span class="menu__item-price">35€</span>
+                </div>
                 <input
                   class="menu__checkbox"
                   type="checkbox"
@@ -74,13 +79,15 @@
                 />
               </label>
             </li>
-            <li>
-              <label class="icon-container">
+            <li class="menu__item">
+              <label class="menu__item-label">
                 <span class="menu__item-name">Oeuf au plat</span>
-                <span class="menu__item-description"
-                  >Assaisonné à la truffe sur lit de caviar</span
-                >
-                <span class="menu__item-price">20€</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Assaisonné à la truffe sur lit de caviar</span
+                  >
+                  <span class="menu__item-price">20€</span>
+                </div>
                 <input
                   class="menu__checkbox"
                   type="checkbox"
@@ -91,6 +98,123 @@
             </li>
           </ul>
         </section>
+        <section class="menu__section">
+          <h3 class="menu__section-title">PLATS</h3>
+          <div class="menu__underline"></div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name">Filet de boeuf aux herbes</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Accompagné de sa ribambelle de légumes</span
+                  >
+                  <span class="menu__item-price">40€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="main"
+                  value="4"
+                />
+              </label>
+            </li>
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name"
+                  >Parmentier de queue de boeuf</span
+                >
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >À la truffe noire sur sa purée de panais</span
+                  >
+                  <span class="menu__item-price">35€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="main"
+                  value="5"
+                />
+              </label>
+            </li>
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name">Filet de turbot</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description">Aux agrumes</span>
+                  <span class="menu__item-price">44€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="main"
+                  value="6"
+                />
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="menu__section">
+          <h3 class="menu__section-title">Entrées</h3>
+          <div class="menu__underline"></div>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name">Paris-Brest</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description">Revisité</span>
+                  <span class="menu__item-price">18€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="dessert"
+                  value="7"
+                />
+              </label>
+            </li>
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name"
+                  >Macaron au chocolat d'exception</span
+                >
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Et glace à la vanille de Madagascar</span
+                  >
+                  <span class="menu__item-price">22€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="dessert"
+                  value="8"
+                />
+              </label>
+            </li>
+            <li class="menu__item">
+              <label class="menu__item-label">
+                <span class="menu__item-name">Mousse au chocolat</span>
+                <div class="menu__description-container">
+                  <span class="menu__item-description"
+                    >Au piment d'Espelette et à la truffe noire</span
+                  >
+                  <span class="menu__item-price">23€</span>
+                </div>
+                <input
+                  class="menu__checkbox"
+                  type="checkbox"
+                  name="dessert"
+                  value="9"
+                />
+              </label>
+            </li>
+          </ul>
+        </section>
+        <div class="menu__btn-container">
+          <button class="btn">Commander</button>
+        </div>
       </form>
     </main>
   </body>
