@@ -22,3 +22,13 @@ $shadow-y: 5px;
 $shadow-blur: 8px;
 $shadow-spread: 0;
 $shadow-color: $shadow-light;
+
+// Media queries breakpoints
+$breakpoints: (
+  "medium": (
+    min-width: 650px,
+  ),
+  "large": (
+    min-width: 800px,
+  ),
+);
