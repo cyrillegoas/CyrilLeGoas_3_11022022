@@ -220,6 +220,10 @@ body {
   border-radius: 20px;
   @include box-shadow();
 
+  &:hover {
+    transform: scale(1.02);
+  }
+
   @include respond-to("medium") {
     flex-basis: calc(50% - 1rem);
   }
