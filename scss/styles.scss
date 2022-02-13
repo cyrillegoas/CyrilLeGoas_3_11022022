@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "_placeholders.scss";
 
 html {
   box-sizing: border-box;
@@ -239,9 +240,7 @@ body {
   position: relative;
   @include box-shadow();
 
-  &:hover {
-    transform: scale(1.02);
-  }
+  @extend %hover-scale;
 
   @include respond-to("medium") {
     flex-basis: calc(50% - 1rem);
@@ -389,6 +388,7 @@ body {
     border-radius: 20px;
     background-color: $white;
     @include box-shadow();
+    @extend %hover-scale;
   }
 
   &__item-label {

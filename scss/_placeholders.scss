@@ -1,0 +1,6 @@
+%hover-scale {
+  &:hover {
+    transform: scale(1.01);
+    transition: transform ease-in 300ms;
+  }
+}
