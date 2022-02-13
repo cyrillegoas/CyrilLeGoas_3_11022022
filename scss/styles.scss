@@ -388,6 +388,7 @@ body {
   &__item {
     border-radius: 20px;
     background-color: $white;
+    @include box-shadow();
   }
 
   &__item-label {
