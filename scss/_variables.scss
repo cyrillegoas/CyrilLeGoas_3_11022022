@@ -25,6 +25,9 @@ $shadow-color: $shadow-light;
 
 // Media queries breakpoints
 $breakpoints: (
+  "small": (
+    max-width: 300px,
+  ),
   "medium": (
     min-width: 650px,
   ),
