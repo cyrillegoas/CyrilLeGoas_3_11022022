@@ -30,3 +30,11 @@
     @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+
+@mixin delay-between-items($item_count, $delay) {
+  @for $i from 1 through $item_count {
+    &:nth-child(#{$i}) {
+      animation-delay: #{($i * $delay) - $delay}s;
+    }
+  }
+}

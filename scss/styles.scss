@@ -433,6 +433,15 @@ body {
     width: 2.5rem;
     height: 0.1875rem;
     background-color: $terciary;
+    animation: expand 0.8s linear forwards;
+    @keyframes expand {
+      from {
+        width: 0;
+      }
+      to {
+        width: 2.5rem;
+      }
+    }
   }
 
   &__list {
@@ -449,6 +458,22 @@ body {
     background-color: $white;
     @include box-shadow();
     @extend %hover-scale;
+
+    opacity: 0;
+    animation: fadein 0.8s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+
+    @include delay-between-items(3, 0.2);
+
+    @keyframes fadein {
+      from {
+        transform: translateY(0.5rem);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
   }
 
   &__item-label {
