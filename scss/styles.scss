@@ -511,7 +511,7 @@ body {
     margin-left: 0.9375rem;
   }
 
-  &__item-checkmark {
+  &__checkmark {
     flex: 0;
     background-color: $terciary;
     padding: 0 1.125rem;
@@ -521,6 +521,7 @@ body {
     border-bottom-right-radius: 20px;
     cursor: pointer;
 
+    // need to use div + tag to bump the specificity vs style comming from fontawesome
     & span {
       width: 1.25rem;
       line-height: 1.25rem;
@@ -528,6 +529,8 @@ body {
       text-align: center;
       color: $terciary;
       background-color: $white;
+      transform: rotate(1turn);
+      @extend %transition-checkmark-icon;
     }
   }
 
@@ -543,9 +546,14 @@ body {
     height: 0;
     width: 0;
 
-    &:checked + label {
+    &:checked ~ .menu__item-label {
       width: calc(100% - 3.5rem);
       @extend %transition-checkmark;
+    }
+
+    &:checked ~ .menu__checkmark .menu__checkmark-icon {
+      transform: rotate(-1turn);
+      @extend %transition-checkmark-icon;
     }
   }
 }
