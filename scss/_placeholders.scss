@@ -5,8 +5,8 @@
   }
 }
 %transition-checkmark {
-  transition: width 0.3s linear;
+  transition: width 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 %transition-checkmark-icon {
-  transition: transform 0.3s linear;
+  transition: transform 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
