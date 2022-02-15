@@ -4,3 +4,6 @@
     transition: transform ease-in 300ms;
   }
 }
+%transition-checkmark {
+  transition: width 0.2s linear;
+}
