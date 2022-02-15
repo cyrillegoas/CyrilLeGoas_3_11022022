@@ -1,5 +1,26 @@
-<?xml-stylesheet type="text/css" href="svg_style.css"?>
 <svg class="heart" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .empty .inside {
+    fill: hsl(0, 0%, 100%);
+    opacity: 1;
+    transition: opacity 10s ease;
+  }
+
+  .empty .outside {
+    fill: hsl(0, 0%, 6%);
+    opacity: 1;
+    transition: opacity 10s ease;
+  }
+  
+  .full {
+    fill: url(#Gradient);
+  }
+  
+  svg:hover .empty {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+  }
+</style>
 <linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
         <stop offset="0%" stop-color="hsl(317, 100%, 74%)"/>
         <stop offset="100%" stop-color="hsl(267, 66%, 60%)"/>
