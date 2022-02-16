@@ -600,6 +600,7 @@ body {
   padding: 0.875rem 0.75rem;
   background-color: $white;
   border-radius: 20px;
+  max-height: 66.53125rem;
   @include box-shadow();
   @include respond-to("medium") {
     display: flex;
