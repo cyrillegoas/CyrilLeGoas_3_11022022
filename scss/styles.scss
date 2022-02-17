@@ -160,6 +160,7 @@ body {
   color: $white;
   font-size: 1rem;
   font-family: $roboto;
+  cursor: pointer;
 
   &:hover {
     background-image: linear-gradient(
