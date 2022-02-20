@@ -274,8 +274,7 @@ body {
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
+    @extend %m0p0;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
@@ -310,8 +309,7 @@ body {
   }
 
   &__figure {
-    margin: 0;
-    padding: 0;
+    @extend %m0p0;
   }
 
   &__image {
@@ -393,8 +391,7 @@ body {
   }
 
   &__list {
-    padding: 0;
-    margin: 0;
+    @extend %m0p0;
     list-style: none;
   }
 
@@ -494,8 +491,7 @@ body {
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
+    @extend %m0p0;
     list-style: none;
     display: flex;
     flex-flow: column nowrap;
@@ -644,8 +640,7 @@ body {
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
+    @extend %m0p0;
     list-style: none;
   }
 
