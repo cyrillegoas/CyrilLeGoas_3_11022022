@@ -593,12 +593,10 @@ body {
 
     &:checked ~ .menu__item-label {
       width: calc(100% - 3.5rem);
-      @extend %transition-checkmark;
     }
 
     &:checked ~ .menu__checkmark .menu__checkmark-icon {
       transform: rotate(-1turn);
-      @extend %transition-checkmark-icon;
     }
   }
 }
