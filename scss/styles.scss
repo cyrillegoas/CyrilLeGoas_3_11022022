@@ -240,18 +240,17 @@ body {
       text-align: center;
     }
 
-    &--color-purple {
+    &:hover {
       background-color: $primary-faded;
+      & .steps__icon {
+        color: $primary;
+      }
     }
   }
 
   &__icon {
     margin-right: 1.75rem;
     color: $grey-dark;
-
-    &--color-purple {
-      color: $primary;
-    }
   }
 
   &__instruction {
